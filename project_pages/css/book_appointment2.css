@@ -10,6 +10,10 @@ body {
     background: #fff;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 main {
     overflow: hidden;
 }
@@ -305,3 +309,23 @@ header {
         opacity: 100%;
     }
 }
+
+/* @media only screen and (max-width:600px) {
+    .direct-wrap {
+        padding-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 0px;
+        row-gap: 30px;
+        align-items: center;
+        padding: 0px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+} */

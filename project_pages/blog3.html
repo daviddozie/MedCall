@@ -77,7 +77,7 @@
   <!-- end of header -->
 
   <!-- Main -->
-  <main>
+  <main class="overflow-hidden">
     <div class="container">
       <div class="direct-nav">
         <a href="../index.html">Home</a>
@@ -95,7 +95,7 @@
               fertility.</span>
             <span>3 min read</span>
           </div>
-          <div class="content">
+          <div class="content overflow-hidden">
             <img src="./images/woman_blog3_large.png" alt="" data-aos="zoom-in">
             <div class="author-details" data-aos="zoom-in">
               <div class="author">
@@ -193,36 +193,36 @@
       <div class="border"></div>
       <div class="row gy-5 footer-wrapper">
         <div class="col-lg-2" data-aos="fade-up">
-          <a href="../index.html">
-            <img src="./images/home/logo_medcall/MedCall logo new 1.png" alt="">
+          <a href="#" aria-current="page">
+            <img src="./images/MedCall logo new 1 (1).png" alt="">
           </a>
         </div>
-        <div class="col-lg-2 col-md-4" data-aos="fade-up">
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up">
           <h4 class="footer-title mb-4">Section</h4>
           <ul class="footer-nav-link-wrapper">
             <li class="mb-4">
-              <a href="./about.html">
+              <a href="./project_pages/about.html">
                 About Us
               </a>
             </li>
             <li class="mb-4">
-              <a href="./categories1.html">
+              <a href="./project_pages/categories1.html">
                 Categories
               </a>
             </li>
             <li class="mb-4">
-              <a href="./doctorslist.html">
+              <a href="./project_pages/doctorslist.html">
                 Doctors
               </a>
             </li>
             <li>
-              <a href="./blog1.html">
+              <a href="./project_pages/blog1.html">
                 Blog
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-4" data-aos="fade-up">
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up">
           <h4 class="footer-title mb-4">Services</h4>
           <ul class="footer-nav-link-wrapper">
             <li class="mb-4">
@@ -242,7 +242,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-4" data-aos="fade-up">
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up">
           <h4 class="footer-title mb-4">Contact Us</h4>
           <ul class="footer-nav-link-wrapper">
             <li class="mb-4">
@@ -252,14 +252,8 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-4" data-aos="fade-up">
-          <h4 class="footer-title mb-4">Newsletter</h4>
-          <form class="d-flex justify-content-center footer-input">
-            <input type="text" placeholder="Email Address" class="email">
-            <button type="submit" class="btn btn-warning">Subscribe</button>
-          </form>
-          <span class="error-message"></span>
-          <h4 class="footer-title mt-5 mb-3">Follow Us</h4>
+        <div class="col-6 d-md-none">
+          <h4 class="footer-title">Follow Us</h4>
           <p class="footer-media">Do well to follow us</p>
           <ul class="d-flex social-media-icons">
             <li class="pe-4">
@@ -284,12 +278,46 @@
             </li>
           </ul>
         </div>
+        <div class="col-lg-4" data-aos="fade-up">
+          <h4 class="footer-title mb-4">Newsletter</h4>
+          <form class="d-flex justify-content-center footer-input">
+            <input type="text" placeholder="Email Address" class="email">
+            <button type="submit" class="btn btn-warning">Subscribe</button>
+          </form>
+          <span class="error-message"></span>
+          <div class="d-none d-md-block">
+            <h4 class="footer-title mt-5 mb-3">Follow Us</h4>
+            <p class="footer-media">Do well to follow us</p>
+            <ul class="d-flex social-media-icons">
+              <li class="pe-4">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="pe-4">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="pe-4">
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="pace">
-        <div class="border"></div>
+        <div class="border mt-5 mt-md-0"></div>
       </div>
       <div class="pb-4">
-        <div class="d-flex">
+        <div class="d-flex justify-content-md-start justify-content-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
             <path
               d="M10 0.5C4.47714 0.5 0 4.97714 0 10.5C0 16.0229 4.47714 20.5 10 20.5C15.5229 20.5 20 16.0229 20 10.5C20 4.97714 15.5229 0.5 10 0.5ZM14.7231 14.482C14.659 14.5573 13.1193 16.326 10.2937 16.326C6.87867 16.326 4.4677 13.7752 4.4677 10.4563C4.4677 7.17798 6.96786 4.67403 10.2646 4.67403C12.9644 4.67403 14.376 6.17867 14.4348 6.24274C14.5072 6.32165 14.5514 6.42234 14.5604 6.52904C14.5694 6.63574 14.5428 6.74243 14.4847 6.83238L13.5823 8.22976C13.419 8.48246 13.0672 8.52617 12.8471 8.3223C12.8377 8.31367 11.7773 7.3594 10.3519 7.3594C8.49238 7.3594 7.37141 8.71323 7.37141 10.4272C7.37141 12.0241 8.4002 13.6406 10.3665 13.6406C11.9268 13.6406 12.9987 12.4979 13.0094 12.4864C13.2163 12.262 13.5763 12.2834 13.7556 12.5288L14.7454 13.8825C14.8097 13.9704 14.8424 14.0774 14.8384 14.1861C14.8343 14.2949 14.7937 14.3991 14.7231 14.482Z"
