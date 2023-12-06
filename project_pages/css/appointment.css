@@ -1,0 +1,164 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.appointment {
+    overflow: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+a {
+    color: #979795 !important;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+
+}
+
+.priv-wrap {
+    font-size: 20px;
+    width: 10%;
+}
+
+@keyframes trans {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+}
+
+.arrow {
+    color: #979595;
+    font-size: 30px;
+}
+
+.prev-nav {
+    color: #979595;
+}
+
+.prev-nav:hover {
+    text-decoration: underline;
+}
+
+.priv-wrap:hover .arrow {
+    animation: trans 0.75s infinite;
+}
+
+.dc {
+    display: flex;
+
+}
+h2 {
+    font-size: 28px;
+    color: #135063;
+    font-weight: 600;
+}
+.up {
+    font-size: 20px;
+    font-weight: 600;
+    color: #135063;
+    text-decoration-line: underline;
+    line-height: normal;
+    font-family: poppins;
+}
+.past {
+    font-size: 20px;
+    font-weight: 600;
+    color: #89A7B1;
+    padding-right: 300px;
+}
+.card {
+    position: relative;
+    border-radius: 20px;
+}
+.bi {
+    color: #ffff;
+    
+    
+}
+
+.app-img-1 {
+    width: 100%;
+}
+.mcard {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: fit-content;
+    margin-bottom: 1.5rem;
+ }
+.card-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #135063;
+    border-radius: 20px;
+}
+.mcard span {
+    color: #979795;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.circle-icon {
+    display: flex;
+    background: #135063;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius:100px;
+    
+}
+
+.dr {
+    font-size: 24px;
+    font-weight: 700;
+    color: #135063;
+}
+.opt {
+    font-size: 18px;
+    font-weight: 400;
+    color: #979795;
+}
+
+.date p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #979795;
+}
+.button-1 {
+    background-color: var(--primary-100, #135063) !important;
+    width: 124px;
+    height: 48px;
+    font-size: 16px;
+    color: #ffff;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+    border: 0px solid;
+}
+.button-2 {
+    background-color: var(--primary-1, #ffff) !important;
+    border: 2px solid var(--primary-100, #135063);
+    width: 124px;
+    height: 48px;
+    font-size: 16px;
+    color: var(--primary-100, #135063);
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+}
