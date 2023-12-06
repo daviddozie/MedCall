@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container { 
+    margin-top: -30px;
+} 
+
+.priv-wrap {
+    color: #979795;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -120px;
+}
+
+.priv-wrap {
+    font-size: 20px;
+    width: 10%;
+}
+
+@keyframes trans {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+}
+
+.arrow {
+    color: #979595;
+    font-size: 30px;
+}
+
+.prev-nav {
+    color: #979595;
+}
+
+.prev-nav:hover {
+    text-decoration: underline;
+}
+
+.priv-wrap:hover .arrow {
+    animation: trans 0.75s infinite;
+}
+
+.title-wrap {
+    color: #135063;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -120px;
+}
+
+#container p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.first {
+    display: flex;
+}
+
+.first > img {
+    width: 30px;
+}
+
+.hold, #hold {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#hold p {
+    color: #135063;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+button {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    padding: 2px;
+}
+
+.image, #image {
+    display: flex;
+    gap: 10px;
+}
+
+.image > img, #image > img {
+    width: 15px;
+    height: 15px;
+}
+
+.image p {
+    color: #89A7B1;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#image p {
+    color: #89A7B1;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 320px) {
+    .title-wrap {
+        color: #135063;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .priv-wrap {
+        color: #979795;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
