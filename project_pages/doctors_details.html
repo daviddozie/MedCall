@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedCall</title>
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--bootstrap-library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--bootstrap-cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Boxicon cdn-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--AOS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awesome cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+    <!--google font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./css/doctors_details.css">
+</head>
+
+<body>
+    <header id="header">
+        <!------------Navigation------------>
+        <nav class="navbar navbar-expand-lg container-fluid py-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="./index.html">
+                    <img src="./images/MedCall logo new 1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-success fs-1"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav pe-lg-5">
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="./categories1.html">Categories</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link active" href="./doctorslist.html">Personnel</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="./blog1.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="ps-lg-5">
+                        <a href="./sign_up.html">
+                            <button type="button" class="btn btn-success">Sign in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!----------------Navigation-end---------------->
+    </header>
+    <main class="">
+        <div class="container">
+            <div class="row mag">
+                <div class="col-md-3 me-lg-5" data-aos="zoom-in">
+                    <img src="./images/doc_detail.png" alt="" class="doc-img">
+                </div>
+                <div class="col-md-4 mt-4 ms-lg-5">
+                    <div data-aos="zoom-in">
+                        <h1 class="doc-name">Dr. Tope Oyewale</h1>
+                        <div class="d-flex align-items-center gap-5 py-4">
+                            <p class="doc-special mb-0">Gynaecologist</p>
+                            <p class="doc-local mb-0">Abuja, NG</p>
+                        </div>
+                        <div class="d-flex align-items-center pb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <g clip-path="url(#clip0_1594_2902)">
+                                    <path
+                                        d="M20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 14.6957 37.8929 9.60859 34.1421 5.85786C30.3914 2.10714 25.3043 0 20 0C14.6957 0 9.60859 2.10714 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C9.60859 37.8929 14.6957 40 20 40ZM29.2675 16.7675L19.26 26.7675C19.0278 26.9999 18.7521 27.1843 18.4486 27.3102C18.1451 27.436 17.8198 27.5007 17.4912 27.5007C17.1627 27.5007 16.8374 27.436 16.5339 27.3102C16.2304 27.1843 15.9547 26.9999 15.7225 26.7675L10.73 21.7675C10.2612 21.2981 9.99814 20.6616 9.99861 19.9982C9.99908 19.3348 10.2631 18.6988 10.7325 18.23C11.2019 17.7612 11.8384 17.4981 12.5018 17.4986C13.1652 17.4991 13.8012 17.7631 14.27 18.2325L17.495 21.465L25.7325 13.2325C26.204 12.7771 26.8355 12.5251 27.491 12.5308C28.1465 12.5365 28.7735 12.7994 29.237 13.263C29.7006 13.7265 29.9635 14.3535 29.9692 15.009C29.9749 15.6645 29.7229 16.296 29.2675 16.7675Z"
+                                        fill="#72CA2D" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1594_2902">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="mb-0 doc-status ms-2">Available </p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <button type="button" class="btn btn-vid d-flex align-items-center">video Call <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none" class="ms-3">
+                                        <path
+                                            d="M15.875 7.625C15.875 6.7962 15.5458 6.00134 14.9597 5.41529C14.3737 4.82924 13.5788 4.5 12.75 4.5H5.5C4.6712 4.5 3.87634 4.82924 3.29029 5.41529C2.70424 6.00134 2.375 6.7962 2.375 7.625V16.375C2.375 17.2038 2.70424 17.9987 3.29029 18.5847C3.87634 19.1708 4.6712 19.5 5.5 19.5H12.75C13.5788 19.5 14.3737 19.1708 14.9597 18.5847C15.5458 17.9987 15.875 17.2038 15.875 16.375V7.625ZM16.875 14.766L20.3555 17.484C21.1765 18.125 22.375 17.54 22.375 16.499V7.5015C22.375 6.46 21.1765 5.8755 20.3555 6.5165L16.875 9.234V14.766Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-vid d-flex align-items-center">Vioce Call<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" class="ms-3">
+                                        <path
+                                            d="M20 15.5C18.8 15.5 17.5 15.3 16.4 14.9H16.1C15.8 14.9 15.6 15 15.4 15.2L13.2 17.4C10.4 15.9 8 13.6 6.6 10.8L8.8 8.6C9.1 8.3 9.2 7.9 9 7.6C8.7 6.5 8.5 5.2 8.5 4C8.5 3.5 8 3 7.5 3H4C3.5 3 3 3.5 3 4C3 13.4 10.6 21 20 21C20.5 21 21 20.5 21 20V16.5C21 16 20.5 15.5 20 15.5ZM5 5H6.5C6.6 5.9 6.8 6.8 7 7.6L5.8 8.8C5.4 7.6 5.1 6.3 5 5ZM19 19C17.7 18.9 16.4 18.6 15.2 18.2L16.4 17C17.2 17.2 18.1 17.4 19 17.4V19ZM15 12H17C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7V9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12ZM19 12H21C21 7 16.97 3 12 3V5C15.86 5 19 8.13 19 12Z"
+                                            fill="#135063" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <p class="mb-0 doc-status  text-center">Overall rating</p>
+                            <h1 class="rate text-center my-3">0</h1>
+                            <div class="d-flex justify-content-between">
+                                <div data-aos="zoom-in" data-aos-delay="100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="#F2C94C" />
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="black" fill-opacity="0.2" />
+                                    </svg>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-delay="200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="#F2C94C" />
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="black" fill-opacity="0.2" />
+                                    </svg>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-delay="300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="#F2C94C" />
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="black" fill-opacity="0.2" />
+                                    </svg>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-delay="400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="#F2C94C" />
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="black" fill-opacity="0.2" />
+                                    </svg>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-delay="500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="#F2C94C" />
+                                        <path
+                                            d="M10.2942 1.1489C10.5468 0.371541 11.6466 0.371543 11.8991 1.1489L13.7137 6.73347C13.8266 7.08111 14.1506 7.31649 14.5161 7.31649H20.3881C21.2055 7.31649 21.5453 8.36241 20.884 8.84284L16.1335 12.2943C15.8378 12.5092 15.714 12.89 15.827 13.2376L17.6415 18.8222C17.8941 19.5996 17.0044 20.246 16.3431 19.7656L11.5926 16.3141C11.2969 16.0992 10.8965 16.0992 10.6007 16.3141L5.85021 19.7656C5.18896 20.246 4.29924 19.5996 4.55182 18.8222L6.36635 13.2376C6.47931 12.89 6.35557 12.5092 6.05984 12.2943L1.30932 8.84284C0.648065 8.36241 0.987908 7.31649 1.80527 7.31649H7.67723C8.04277 7.31649 8.36673 7.08111 8.47969 6.73347L10.2942 1.1489Z"
+                                            fill="black" fill-opacity="0.2" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="#" class="text-review">
+                                    18 Reviews
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="d-flex">
+                        <div class="line"></div>
+                        <div class="ms-4" data-aos="fade-up">
+                            <p class="mb-0 doc-status pb-3">Recent reviews</p>
+                            <p class="mb-0 text-recent">“Very thorough, explained the entire procedure required,
+                                including it’s pro’s and con’s. Very people<br /> friendly and easy going. His office
+                                staff are also very nice. Highly Recommend.”
+                            </p>
+                            <p class="text-light mb-0 pt-3 pb-4">-Babatunde Ayele. September 7, 2023</p>
+                            <p class="text-recent mb-0">“His approach to treatment goes beyond the conventional,
+                                incorporating innovative therapies<br /> tailored to individual needs . The result?
+                                Progress i never thought possible”... </p>
+                            <p class="text-light mb-0 pt-3 pb-5">-Tochukwu Nwabueze. October 21, 2023</p>
+                            <div class="d-flex align-items-center gap-4 pb-2">
+                                <div>
+                                    <button type="button" class="btn btn-outline-rate">Read more reviews</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-rate" id="openModalBtn">Add to review</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div>
+                        <h1 class="doc-name">Add a Review</h1>
+                        <div class="d-flex justify-content-center gap-4 my-5">
+                            <i class="fa-solid fa-star star-gray1"></i>
+                            <i class="fa-solid fa-star star-gray2"></i>
+                            <i class="fa-solid fa-star star-gray3"></i>
+                            <i class="fa-solid fa-star star-gray4"></i>
+                            <i class="fa-solid fa-star star-gray5"></i>
+                        </div>
+                        <div>
+                            <form action="" class="form-group" id="submit">
+                                <textarea name="message" id="message" cols="30" rows="10" class="w-100 p-3 form-control"
+                                    placeholder="Add a review"></textarea>
+                                <span class="error"></span>
+                                <div class="d-flex justify-content-center my-4">
+                                    <button type="submit"
+                                        class="btn btn-rate d-flex align-items-center justify-content-center"
+                                        id="openModalBtn">Submit <div class="load ms-3"></div></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="mb-0 doc-status">About me</p>
+                <div class="mt-3" data-aos="fade-left">
+                    <p class="sub mb-1">Eduation:</p>
+                    <p class="mb-0 sub-text">Dr. Oyewala holds a Doctor of Medicine (MD) degree from Ivy League School
+                        of Medicine, where his passion for psychiatry took root. Committed to unraveling the mysteries
+                        of the mind, he pursued a Ph.D. in Neuroscience, delving into the interplay between brain
+                        function and mental well-being.
+                    </p>
+                </div>
+                <div class="mt-5" data-aos="fade-left">
+                    <p class="sub mb-1">Clinical Expertise:</p>
+                    <p class="mb-0 sub-text">With over 15 years of clinical experience, Dr. Oyewale has become a beacon
+                        of expertise in the field. His extensive knowledge spans a wide spectrum of psychiatric
+                        conditions, from mood disorders to complex neurodevelopmental issues.
+                    </p>
+                </div>
+                <div class="mt-5" data-aos="fade-left">
+                    <p class="sub mb-1">Research and Publications:</p>
+                    <p class="mb-0 sub-text">Beyond his clinical practice, Dr. Oyewale is a prolific researcher and
+                        author. His groundbreaking studies on the neural correlates of emotional regulation have been
+                        published in leading neuroscience journals. His commitment to advancing the field is evident in
+                        his contributions to conferences and symposiums.
+                    </p>
+                </div>
+                <div class="mt-5 mb-3" data-aos="fade-left">
+                    <p class="sub mb-1">Innovative Approaches:</p>
+                    <p class="mb-0 sub-text">Dr. Oyewale is known for his innovative approaches to mental health
+                        treatment. From traditional psychotherapy to cutting-edge neurofeedback and psychopharmacology,
+                        he tailors treatment plans to the unique needs of each patient. His integration of holistic
+                        wellness principles ensures a comprehensive approach to mental health care.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="border"></div>
+                <div class="row gy-5 footer-wrapper">
+                    <div class="col-lg-2" data-aos="fade-up">
+                        <a href="../index.html">
+                            <img src="./images/MedCall logo new 1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4" data-aos="fade-up">
+                        <h4 class="footer-title mb-4">Section</h4>
+                        <ul class="footer-nav-link-wrapper">
+                            <li class="mb-4">
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./categories1.html">
+                                    Categories
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">
+                                    Doctors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4" data-aos="fade-up">
+                        <h4 class="footer-title mb-4">Services</h4>
+                        <ul class="footer-nav-link-wrapper">
+                            <li class="mb-4">
+                                <a href="#">
+                                    Get A Diagnosis
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">
+                                    How it works
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4" data-aos="fade-up">
+                        <h4 class="footer-title mb-4">Contact Us</h4>
+                        <ul class="footer-nav-link-wrapper">
+                            <li class="mb-4">
+                                <a href="#">
+                                    FAQs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <h4 class="footer-title mb-4">Newsletter</h4>
+                        <form class="d-flex justify-content-center footer-input">
+                            <input type="text" placeholder="Email Address" class="email">
+                            <button type="submit" class="btn btn-warning">Subscribe</button>
+                        </form>
+                        <span class="error-message"></span>
+                        <h4 class="footer-title mt-5 mb-3">Follow Us</h4>
+                        <p class="footer-media">Do well to follow us</p>
+                        <ul class="d-flex social-media-icons">
+                            <li class="pe-4">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="pe-4">
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="pe-4">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pace">
+                    <div class="border"></div>
+                </div>
+                <div class="pb-4">
+                    <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path
+                                d="M10 0.5C4.47714 0.5 0 4.97714 0 10.5C0 16.0229 4.47714 20.5 10 20.5C15.5229 20.5 20 16.0229 20 10.5C20 4.97714 15.5229 0.5 10 0.5ZM14.7231 14.482C14.659 14.5573 13.1193 16.326 10.2937 16.326C6.87867 16.326 4.4677 13.7752 4.4677 10.4563C4.4677 7.17798 6.96786 4.67403 10.2646 4.67403C12.9644 4.67403 14.376 6.17867 14.4348 6.24274C14.5072 6.32165 14.5514 6.42234 14.5604 6.52904C14.5694 6.63574 14.5428 6.74243 14.4847 6.83238L13.5823 8.22976C13.419 8.48246 13.0672 8.52617 12.8471 8.3223C12.8377 8.31367 11.7773 7.3594 10.3519 7.3594C8.49238 7.3594 7.37141 8.71323 7.37141 10.4272C7.37141 12.0241 8.4002 13.6406 10.3665 13.6406C11.9268 13.6406 12.9987 12.4979 13.0094 12.4864C13.2163 12.262 13.5763 12.2834 13.7556 12.5288L14.7454 13.8825C14.8097 13.9704 14.8424 14.0774 14.8384 14.1861C14.8343 14.2949 14.7937 14.3991 14.7231 14.482Z"
+                                fill="#135063" />
+                        </svg>
+                        <p class="footer-media ms-3">2023 All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                delay: 100,
+                easing: 'ease-in-out',
+            });
+        </script>
+        <!--Swipper js-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+            </script>
+        <!--js-->
+        <script src="./js/footer.js"></script>
+        <script src="./js/doctors_details.js"></script>
+</body>
+
+</html>

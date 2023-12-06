@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedCall</title>
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--bootstrap-library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--bootstrap-cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Boxicon cdn-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--AOS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awesome cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+    <!--google font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./css/doctorslist.css">
+</head>
+
+<body>
+    <header id="header">
+        <!------------Navigation------------>
+        <nav class="navbar navbar-expand-lg container-fluid py-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="./index.html">
+                    <img src="./images/MedCall logo new 1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-success fs-1"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav pe-lg-5">
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="./categories1.html">Categories</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link active" href="./doctorslist.html">Personnel</a>
+                        </li>
+                        <li class="nav-item px-lg-2">
+                            <a class="nav-link" href="./blog1.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="ps-lg-5">
+                        <a href="./sign_up.html">
+                            <button type="button" class="btn btn-success">Sign in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!----------------Navigation-end---------------->
+    </header>
+    <main class="">
+        <div class="container">
+            <div class="title-wrapper mb-4">
+                <h1>Welcome Guest,</h1>
+            </div>
+            <div class="mb-5">
+                <form class="row gy-4" role="search">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center search-border">
+                            <input class="form-control me-2 search-input" type="search"
+                                placeholder="Search for doctors,nurses" aria-label="Search">
+                            <button type="button" class="btn btn-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M20.0001 20.0004L15.9501 15.9504M15.9501 15.9504C16.6002 15.3003 17.1158 14.5286 17.4676 13.6793C17.8194 12.83 18.0005 11.9197 18.0005 11.0004C18.0005 10.0811 17.8194 9.17076 17.4676 8.32144C17.1158 7.47211 16.6002 6.7004 15.9501 6.05036C15.3001 5.40031 14.5284 4.88467 13.679 4.53287C12.8297 4.18107 11.9194 4 11.0001 4C10.0808 4 9.17051 4.18107 8.32119 4.53287C7.47187 4.88467 6.70016 5.40031 6.05011 6.05036C4.73729 7.36318 3.99976 9.14375 3.99976 11.0004C3.99976 12.857 4.73729 14.6375 6.05011 15.9504C7.36293 17.2632 9.1435 18.0007 11.0001 18.0007C12.8567 18.0007 14.6373 17.2632 15.9501 15.9504Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center gap-4 justify-content-center justify-content-lg-end">
+                            <p class="filter mb-0">Filter by:</p>
+                            <div>
+                                <button type="button" class="btn btn-primary">Free</button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-light d-flex align-items-center"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M13.9999 5.00012C13.9999 5.53012 13.7939 6.01212 13.4569 6.37012L16.0809 9.65012C16.1166 9.69488 16.1665 9.72605 16.2224 9.73842C16.2783 9.7508 16.3367 9.74363 16.3879 9.71812L19.0379 8.39212C18.9806 8.10199 18.9883 7.80279 19.0603 7.51598C19.1324 7.22916 19.267 6.96184 19.4545 6.7332C19.6421 6.50455 19.8779 6.32025 20.1451 6.1935C20.4123 6.06676 20.7042 6.00072 20.9999 6.00012C21.4916 6.00022 21.966 6.18143 22.3325 6.50914C22.6991 6.83686 22.9321 7.28811 22.987 7.77671C23.0419 8.26531 22.9149 8.75703 22.6303 9.15794C22.3456 9.55885 21.9233 9.84086 21.4439 9.95012L19.6399 19.5731C19.5646 19.9742 19.3514 20.3364 19.0374 20.5969C18.7233 20.8575 18.328 21.0001 17.9199 21.0001H6.0799C5.6718 21.0001 5.27653 20.8575 4.96244 20.5969C4.64836 20.3364 4.43523 19.9742 4.3599 19.5731L2.5559 9.95012C2.17252 9.8627 1.8234 9.66421 1.55221 9.37946C1.28102 9.09471 1.09979 8.73633 1.03117 8.34914C0.962557 7.96194 1.00961 7.56311 1.16643 7.20251C1.32326 6.84191 1.58291 6.53554 1.91292 6.32171C2.24292 6.10788 2.62864 5.99607 3.02185 6.00027C3.41505 6.00447 3.7983 6.12449 4.12366 6.34532C4.44902 6.56615 4.70207 6.87799 4.85116 7.24186C5.00025 7.60573 5.03877 8.00547 4.9619 8.39112L7.6119 9.71712C7.66313 9.74263 7.72156 9.7498 7.77743 9.73742C7.83331 9.72505 7.88325 9.69388 7.9189 9.64912L10.5429 6.36912C10.3193 6.13137 10.1574 5.84253 10.0711 5.52779C9.98479 5.21306 9.97684 4.88199 10.0479 4.56347C10.119 4.24496 10.2669 3.94867 10.4788 3.70047C10.6907 3.45226 10.9601 3.25968 11.2635 3.13952C11.5669 3.01936 11.8952 2.97528 12.2195 3.01112C12.5439 3.04696 12.8546 3.16163 13.1245 3.34513C13.3943 3.52863 13.6152 3.77538 13.7678 4.06386C13.9204 4.35233 14.0001 4.67377 13.9999 5.00012ZM11.9999 17.0001C12.5303 17.0001 13.039 16.7894 13.4141 16.4143C13.7892 16.0393 13.9999 15.5305 13.9999 15.0001C13.9999 14.4697 13.7892 13.961 13.4141 13.5859C13.039 13.2108 12.5303 13.0001 11.9999 13.0001C11.4695 13.0001 10.9608 13.2108 10.5857 13.5859C10.2106 13.961 9.9999 14.4697 9.9999 15.0001C9.9999 15.5305 10.2106 16.0393 10.5857 16.4143C10.9608 16.7894 11.4695 17.0001 11.9999 17.0001Z"
+                                            fill="#135063" />
+                                    </svg>Premium
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-light">All</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="title">
+                <h1>DOCTORS/NURSES</h1>
+            </div>
+            <div class="row gap my-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list1.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="./doctors_details.html">
+                        <div class="text-center">
+                            <img src="./images/doc_list2.png" alt="" class="doc-list">
+                            <h4 class="doc-name pt-4">Dr. Taiwo Oyewale</h4>
+                            <p class="doc-post mb-0">Gynaecologist</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list3.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Anita Madueke </h4>
+                        <p class="doc-post mb-0">Pediatrician</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list4.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Alex Obi</h4>
+                        <p class="doc-post mb-0">Optician</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list5.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list6.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list7.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list8.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list9.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list10.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list11.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <img src="./images/doc_list12.png" alt="" class="doc-list">
+                        <h4 class="doc-name pt-4">Dr. Ayo Gbenga</h4>
+                        <p class="doc-post mb-0">Andrologist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="border"></div>
+            <div class="row gy-5 footer-wrapper">
+                <div class="col-lg-2" data-aos="fade-up">
+                    <a href="../index.html">
+                        <img src="./images/MedCall logo new 1.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4" data-aos="fade-up">
+                    <h4 class="footer-title mb-4">Section</h4>
+                    <ul class="footer-nav-link-wrapper">
+                        <li class="mb-4">
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="./categories1.html">
+                                Categories
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">
+                                Doctors
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4" data-aos="fade-up">
+                    <h4 class="footer-title mb-4">Services</h4>
+                    <ul class="footer-nav-link-wrapper">
+                        <li class="mb-4">
+                            <a href="#">
+                                Get A Diagnosis
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">
+                                How it works
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4" data-aos="fade-up">
+                    <h4 class="footer-title mb-4">Contact Us</h4>
+                    <ul class="footer-nav-link-wrapper">
+                        <li class="mb-4">
+                            <a href="#">
+                                FAQs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h4 class="footer-title mb-4">Newsletter</h4>
+                    <form class="d-flex justify-content-center footer-input">
+                        <input type="text" placeholder="Email Address" class="email">
+                        <button type="submit" class="btn btn-warning">Subscribe</button>
+                    </form>
+                    <span class="error-message"></span>
+                    <h4 class="footer-title mt-5 mb-3">Follow Us</h4>
+                    <p class="footer-media">Do well to follow us</p>
+                    <ul class="d-flex social-media-icons">
+                        <li class="pe-4">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="pe-4">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="pe-4">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pace">
+                <div class="border"></div>
+            </div>
+            <div class="pb-4">
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                        <path
+                            d="M10 0.5C4.47714 0.5 0 4.97714 0 10.5C0 16.0229 4.47714 20.5 10 20.5C15.5229 20.5 20 16.0229 20 10.5C20 4.97714 15.5229 0.5 10 0.5ZM14.7231 14.482C14.659 14.5573 13.1193 16.326 10.2937 16.326C6.87867 16.326 4.4677 13.7752 4.4677 10.4563C4.4677 7.17798 6.96786 4.67403 10.2646 4.67403C12.9644 4.67403 14.376 6.17867 14.4348 6.24274C14.5072 6.32165 14.5514 6.42234 14.5604 6.52904C14.5694 6.63574 14.5428 6.74243 14.4847 6.83238L13.5823 8.22976C13.419 8.48246 13.0672 8.52617 12.8471 8.3223C12.8377 8.31367 11.7773 7.3594 10.3519 7.3594C8.49238 7.3594 7.37141 8.71323 7.37141 10.4272C7.37141 12.0241 8.4002 13.6406 10.3665 13.6406C11.9268 13.6406 12.9987 12.4979 13.0094 12.4864C13.2163 12.262 13.5763 12.2834 13.7556 12.5288L14.7454 13.8825C14.8097 13.9704 14.8424 14.0774 14.8384 14.1861C14.8343 14.2949 14.7937 14.3991 14.7231 14.482Z"
+                            fill="#135063" />
+                    </svg>
+                    <p class="footer-media ms-3">2023 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 100,
+            easing: 'ease-in-out',
+        });
+    </script>
+    <!--Swipper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <!--js-->
+    <script src="./js/footer.js"></script>
+</body>
+
+</html>

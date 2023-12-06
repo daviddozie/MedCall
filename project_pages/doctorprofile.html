@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedCall</title>
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--bootstrap-library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--bootstrap-cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Boxicon cdn-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--AOS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awesome cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="./css/doctorprofile.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg container-fluid py-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img src="./images/MedCall logo new 1 (1).png" alt="">
+                </a>
+                <div class="justify-content-end">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <a href="./doctorslist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-title="Click to see more doctors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.49977 1.91687e-08C7.14436 0.000115492 5.80863 0.324364 4.60402 0.945694C3.39941 1.56702 2.36086 2.46742 1.575 3.57175C0.789144 4.67609 0.278775 5.95235 0.0864735 7.29404C-0.105828 8.63574 0.0255146 10.004 0.469544 11.2846C0.913572 12.5652 1.65741 13.7211 2.639 14.6557C3.62059 15.5904 4.81147 16.2768 6.11228 16.6576C7.41309 17.0384 8.78611 17.1026 10.1168 16.8449C11.4475 16.5872 12.6972 16.015 13.7618 15.176L17.4138 18.828C17.6024 19.0102 17.855 19.111 18.1172 19.1087C18.3794 19.1064 18.6302 19.0012 18.8156 18.8158C19.001 18.6304 19.1062 18.3796 19.1084 18.1174C19.1107 17.8552 19.0099 17.6026 18.8278 17.414L15.1758 13.762C16.1638 12.5086 16.7789 11.0024 16.9509 9.41573C17.1228 7.82905 16.8446 6.22602 16.148 4.79009C15.4514 3.35417 14.3646 2.14336 13.0121 1.29623C11.6595 0.449106 10.0957 -0.000107143 8.49977 1.91687e-08ZM1.99977 8.5C1.99977 6.77609 2.68458 5.12279 3.90357 3.90381C5.12256 2.68482 6.77586 2 8.49977 2C10.2237 2 11.877 2.68482 13.096 3.90381C14.3149 5.12279 14.9998 6.77609 14.9998 8.5C14.9998 10.2239 14.3149 11.8772 13.096 13.0962C11.877 14.3152 10.2237 15 8.49977 15C6.77586 15 5.12256 14.3152 3.90357 13.0962C2.68458 11.8772 1.99977 10.2239 1.99977 8.5Z"
+                                        fill="#135063" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mx-4">
+                            <a href="./doctorprofile.html">
+                                <img src="./images/doctor-profile-header.png" alt="" class="profile-book"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Profile">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="./doctorprofile.html">Profile</a>
+                                    <a href="./Notification_page.html">Notification</a>
+                                    <a href="./appointment.html">Appointment</a>
+                                    <a href="./settings.html">Settings</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="doctorprofile" class=" pt-5">
+        <div class="container-sm py-5">
+            <div class="pt-5">
+                <div class="c d-flex flex-column justify-content-center align-items-center imx pt-4 "
+                    data-aos="fade-up">
+                    <img src="./images/doctor-profile.png" class="img-fluid" alt="...">
+                    <p id="name" class="pt-1 text-center pb-4"> Dr Ahmed Bello </p>
+                </div>
+                <div class=" text-center d-lg-flex d-md-flex justify-content-center align-items-center "
+                    data-aos="zoom-in">
+                    <p id="span"> Profile </p>
+                    <a href="Notification_page.html">
+                        <p class="ps-lg-5 ps-md-4"> Notification</p>
+                    </a>
+                    <a href="./bookappointment1.html">
+                        <p class="ps-lg-5 ps-md-4"> Appointment</p>
+                    </a>
+                    <a href="./settings.html">
+                        <p class="ps-lg-5 ps-md-4">Setting </p>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="col-12">
+                    <div class="row gy-2" data-aos="fade-up">
+                        <div class="col-lg-3 col-md-4 col-12 ">
+                            <ul>
+                                <li class="heading pt-3">Personal Information </li>
+                                <li> Name: Dr Ahmed Bello </li>
+                                <li> Display Name: Dr Ahmed Bello </li>
+                                <li> Ethnicity: Hausa </li>
+                                <li>Blood Group: O+</li>
+                                <li> ID Number: 2223333444 </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-12 ">
+                            <ul class="pt-lg-5">
+                                <li class=" gender"> Gender: Male </li>
+                                <li> Marital Status: Married </li>
+                                <li> Nationality: Nigerian </li>
+                                <li>Genotype: AA </li>
+                                <li> Specialty: Optometry </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-1 col-md-2 d-lg-block d-none"></div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <ul>
+                                <li class="heading pt-3"> Contact Information </li>
+                                <li> Phone Number: +23480655334 </li>
+                                <li> Address: No 13 Alabi Layout, Benin City. </li>
+                                <li> Email Address: ahmedbello@gmail.com </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" d-flex align-items-end justify-content-end pb-2 pe-5 ">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M3 21V16.75L16.2 3.575C16.4 3.39167 16.621 3.25 16.863 3.15C17.105 3.05 17.359 3 17.625 3C17.8917 3 18.15 3.05 18.4 3.15C18.65 3.25 18.8667 3.4 19.05 3.6L20.425 5C20.625 5.18333 20.771 5.4 20.863 5.65C20.955 5.9 21.0007 6.15 21 6.4C21 6.66667 20.954 6.921 20.862 7.163C20.77 7.405 20.6243 7.62567 20.425 7.825L7.25 21H3ZM17.6 7.8L19 6.4L17.6 5L16.2 6.4L17.6 7.8Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 100,
+            easing: 'ease-in-out',
+        });
+    </script>
+    <!--Swipper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- popper -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <!--js-->
+    <script src="./js/bookappointment1.js"></script>
+</body>
+
+</html>
