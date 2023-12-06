@@ -12,6 +12,9 @@ let userGenotype = document.getElementById('userGenotype');
 let userCity = document.getElementById('userCity');
 let userBloodG = document.getElementById('userBloodG');
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 function validateFirstName(fNameInput, event) {
     if (fNameInput.value === "") {
         fNameInput.nextElementSibling.innerHTML = 'Please enter your first name !';
