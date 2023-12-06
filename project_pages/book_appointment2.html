@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedCall</title>
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--bootstrap-library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--bootstrap-cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Boxicon cdn-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--AOS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awesome cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+    <!--google font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap"
+        rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./css/book_appointment2.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg container-fluid py-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img src="./images/MedCall logo new 1.png" alt="">
+                </a>
+                <div class="justify-content-end">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <a href="./doctorslist.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-title="Click to see more doctors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.49977 1.91687e-08C7.14436 0.000115492 5.80863 0.324364 4.60402 0.945694C3.39941 1.56702 2.36086 2.46742 1.575 3.57175C0.789144 4.67609 0.278775 5.95235 0.0864735 7.29404C-0.105828 8.63574 0.0255146 10.004 0.469544 11.2846C0.913572 12.5652 1.65741 13.7211 2.639 14.6557C3.62059 15.5904 4.81147 16.2768 6.11228 16.6576C7.41309 17.0384 8.78611 17.1026 10.1168 16.8449C11.4475 16.5872 12.6972 16.015 13.7618 15.176L17.4138 18.828C17.6024 19.0102 17.855 19.111 18.1172 19.1087C18.3794 19.1064 18.6302 19.0012 18.8156 18.8158C19.001 18.6304 19.1062 18.3796 19.1084 18.1174C19.1107 17.8552 19.0099 17.6026 18.8278 17.414L15.1758 13.762C16.1638 12.5086 16.7789 11.0024 16.9509 9.41573C17.1228 7.82905 16.8446 6.22602 16.148 4.79009C15.4514 3.35417 14.3646 2.14336 13.0121 1.29623C11.6595 0.449106 10.0957 -0.000107143 8.49977 1.91687e-08ZM1.99977 8.5C1.99977 6.77609 2.68458 5.12279 3.90357 3.90381C5.12256 2.68482 6.77586 2 8.49977 2C10.2237 2 11.877 2.68482 13.096 3.90381C14.3149 5.12279 14.9998 6.77609 14.9998 8.5C14.9998 10.2239 14.3149 11.8772 13.096 13.0962C11.877 14.3152 10.2237 15 8.49977 15C6.77586 15 5.12256 14.3152 3.90357 13.0962C2.68458 11.8772 1.99977 10.2239 1.99977 8.5Z"
+                                        fill="#135063" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mx-4">
+                            <a href="./userprofile.html">
+                                <img src="./images/profile.book.png.png" alt="" class="profile-book"
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Profile">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="./userprofile.html">Profile</a>
+                                    <a href="./Notification_page.html">Notification</a>
+                                    <a href="./appointment.html">Appointment</a>
+                                    <a href="./settings.html">Settings</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="">
+        <div class="container">
+            <div class="direct-wrap">
+                <span class="gray">Home</span><span>/</span><span class="gray">Doctors</span><span>/</span><span
+                    class="success">Book Appointment</span>
+            </div>
+            <div class="title">
+                <h1>Book in a few clicks</h1>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-4">
+                <div class="calendar-title">
+                    <h2>Choose date and time</h2>
+                </div>
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path
+                            d="M23.75 5H21.25V3.75C21.25 3.41848 21.1183 3.10054 20.8839 2.86612C20.6495 2.6317 20.3315 2.5 20 2.5C19.6685 2.5 19.3505 2.6317 19.1161 2.86612C18.8817 3.10054 18.75 3.41848 18.75 3.75V5H11.25V3.75C11.25 3.41848 11.1183 3.10054 10.8839 2.86612C10.6495 2.6317 10.3315 2.5 10 2.5C9.66848 2.5 9.35054 2.6317 9.11612 2.86612C8.8817 3.10054 8.75 3.41848 8.75 3.75V5H6.25C5.25544 5 4.30161 5.39509 3.59835 6.09835C2.89509 6.80161 2.5 7.75544 2.5 8.75V23.75C2.5 24.7446 2.89509 25.6984 3.59835 26.4016C4.30161 27.1049 5.25544 27.5 6.25 27.5H23.75C24.7446 27.5 25.6984 27.1049 26.4016 26.4016C27.1049 25.6984 27.5 24.7446 27.5 23.75V8.75C27.5 7.75544 27.1049 6.80161 26.4016 6.09835C25.6984 5.39509 24.7446 5 23.75 5ZM25 23.75C25 24.0815 24.8683 24.3995 24.6339 24.6339C24.3995 24.8683 24.0815 25 23.75 25H6.25C5.91848 25 5.60054 24.8683 5.36612 24.6339C5.1317 24.3995 5 24.0815 5 23.75V15H25V23.75ZM25 12.5H5V8.75C5 8.41848 5.1317 8.10054 5.36612 7.86612C5.60054 7.6317 5.91848 7.5 6.25 7.5H8.75V8.75C8.75 9.08152 8.8817 9.39946 9.11612 9.63388C9.35054 9.8683 9.66848 10 10 10C10.3315 10 10.6495 9.8683 10.8839 9.63388C11.1183 9.39946 11.25 9.08152 11.25 8.75V7.5H18.75V8.75C18.75 9.08152 18.8817 9.39946 19.1161 9.63388C19.3505 9.8683 19.6685 10 20 10C20.3315 10 20.6495 9.8683 20.8839 9.63388C21.1183 9.39946 21.25 9.08152 21.25 8.75V7.5H23.75C24.0815 7.5 24.3995 7.6317 24.6339 7.86612C24.8683 8.10054 25 8.41848 25 8.75V12.5Z"
+                            fill="#333333" />
+                    </svg>
+                    <div class="month-controls mx-3">
+                        <span id="currentMonthYear" class="month-year"></span>
+                    </div>
+                    <div>
+                        <p class="pamp"><i id="prevMonth" class="fa fa-chevron-up"></i></p>
+                        <p class="mamp"><i id="nextMonth" class="fa fa-chevron-down"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border mb-4"></div>
+            <div class="days">
+                <div class="day-name">Monday</div>
+                <div class="day-name">Tuesday</div>
+                <div class="day-name">Wednesday</div>
+                <div class="day-name">Thursday</div>
+                <div class="day-name">Friday</div>
+                <div class="day-name">Saturday</div>
+                <div class="day-name">Sunday</div>
+            </div>
+            <div class="border my-4"></div>
+            <div class="px-5 mb-5 pb-5">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <button type="button" class="btn btn-light time">8:30am</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">9:30am</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">10:30am</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">11:30am</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">12:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">13:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">14:30pm</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between my-4">
+                    <div>
+                        <button type="button" class="btn btn-light time">15:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">16:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">17:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">18:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">19:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">20:30pm</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light time">21:30pm</button>
+                    </div>
+                </div>
+                <div class="d-flex w-100">
+                    <div class="selected-date-info">
+                        <input type="text" id="selectedDateDisplay" class="selected-date-display">
+                        <p class="clicked-date"></p>
+                    </div>
+                    <div class="submit-book">
+
+                        <button type="button" class="btn btn-success doneBtn d-flex align-items-center"
+                            id="openModalBtn">Done <div class="load ms-3"></div></button>
+
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <i class="fa-solid fa-xmark close" data-aos="zoom-in" data-aos-delay="2000"></i>
+                        </div>
+                        <div class="w-100 d-flex justify-content-center">
+                            <div class="mark-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="151" height="150" viewBox="0 0 151 150"
+                                    fill="none">
+                                    <circle cx="75.5" cy="75" r="75" fill="#EFFFED" />
+                                    <path d="M109.167 52L63.3333 97.8334L42.5 77" stroke="#0EC400" stroke-width="5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
+                            <p class="fw-bold">Successful</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center text-black">
+                            <p class="text-center">Your appointment with Dr. Alex Obi has been<br />
+                                successful booked, check email to see full details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                delay: 100,
+                easing: 'ease-in-out',
+            });
+        </script>
+        <!--Swipper js-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+            </script>
+        <!--js-->
+        <script src="./js/book_appointment2.js"></script>
+</body>
+
+</html>
