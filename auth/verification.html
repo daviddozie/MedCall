@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedCall</title>
+    <!--bootstrap-library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--bootstrap-cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--font awesome cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+    <!--Goggle fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!--Custom css-->
+    <link rel="stylesheet" href="./css/verification.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="first-section">
+            <img src="../project_pages/images/MedCall logo new 1 (1).png" class="mx-3 px-5 mt-5 pt-2">
+            <div class="mx-5 px-5">
+                <div class="text-container">
+
+                    <h3 class="veri-text-col veri-text">Enter your OTP code</h3>
+
+                    <p class="veri-text1">A verification code has been sent to your email address
+                        <span class="veri-text-col" style="font-style: italic;" id="displayVerification"></span>
+                    </p>
+                </div>
+                <p class="veri-text2">Click <span class="text-success">here</span> to resend code (<span
+                        id="timer">00.00</span>)</p>
+                <div class="btn-container">
+                </div>
+                <div class="line mt-5"></div>
+                <p class="sign-in">Or sign in with email</p>
+                <div class="line mb-5" style="margin: -8px 0 0 250px;"></div>
+                <form class="form-group mt-4 w-100" id="validateSignIn">
+                    <div class="">
+                        <div class="card">
+                            <div class="input-wrap d-flex justify-content-center my-4 gap-3 w-100">
+                                <input class="veri-box otp-input text-center" id="digit1" type="text" maxlength="1">
+                                <input class="veri-box otp-input text-center" id="digit2" type="text" maxlength="1">
+                                <input class="veri-box otp-input text-center" id="digit3" type="text" maxlength="1">
+                                <input class="veri-box otp-input text-center" id="digit4" type="text" maxlength="1">
+                                <input class="veri-box otp-input text-center" id="digit5" type="text" maxlength="1">
+                                <input class="veri-box otp-input text-center" id="digit6" type="text" maxlength="1">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button type="submit"
+                                class="btn btn-success d-flex justify-content-center align-items-center" id="signInButton" disabled>
+                                Proceed to Sign in
+                                <div class="load ms-3"></div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="second-section">
+            <div class="eclips-container">
+                <div class="eclips-wrapper">
+                    <div class="item-circle1"></div>
+                    <div class="item-circle2"></div>
+                    <div class="item-circle3"></div>
+                    <div class="item-circle4"></div>
+                    <div class="item-circle5"></div>
+                    <div class="item-circle6"></div>
+                    <div class="item-circle7"></div>
+                    <div class="item-circle8"></div>
+                    <div class="eclips-container">
+                        <div class="eclips"></div>
+                    </div>
+                    <div class="eclips-1"></div>
+                    <div class="eclips-2"></div>
+                    <div class="eclips-3"></div>
+                    <div class="overflow-hidden img-container">
+                        <img src="../project_pages/images/form_img.png" alt="" class="form-img">
+                    </div>
+                </div>
+            </div>
+            <div class="title-wrapper ps-lg-5 pt-md-5">
+                <h3>Introducing Medcall</h3>
+                <p>Experience a new era of Medical<br /> healthcare with MedCall</p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="./js/verification.js"></script>
+</body>
+
+</html>
