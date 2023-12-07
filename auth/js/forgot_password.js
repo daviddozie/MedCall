@@ -33,6 +33,15 @@ function validateEmail(emailinput, event) {
     }
 };
 
+function displayModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'block';
+}
+
+const generateVerificationCode = () => {
+	return Math.floor(100000 + Math.random() * 900000);
+};
+
 document.getElementById('validate-pw1').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -42,19 +51,22 @@ document.getElementById('validate-pw1').addEventListener('submit', function (eve
         return;
     }
 
+    const verificationCode = generateVerificationCode();
+
     const serviceID = 'service_kyyw8we';
     const templateID = 'template_bv5eteh';
 
     const emailParams = {
         email_id: emailForgot.value,
+        verification_code: verificationCode,
     };
 
     emailjs.send(serviceID, templateID, emailParams)
         .then(() => {
-            alert('Successful');
+            displayModal();
             sendAutoReply(emailParams.email_id);
             localStorage.setItem('savedEmail', emailForgot.value);
-            alert('Please check your email to verify');
+            localStorage.setItem('forgotPassword', verificationCode)
             document.querySelector('.load').style.display = 'block';
             setTimeout(() => {
                 window.location.href = './forgot_password2.html';

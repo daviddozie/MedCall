@@ -150,6 +150,9 @@ for (let i = 1; i < 3; i++) {
 let modal = document.getElementById('myModal');
 let succName = document.getElementById('succ');
 let loader = document.querySelector('.load');
+const generateVerificationCode = () => {
+	return Math.floor(100000 + Math.random() * 900000);
+};
 
 let RegisterUser = (evt) => {
 	evt.preventDefault();
@@ -157,6 +160,8 @@ let RegisterUser = (evt) => {
 	if (!validateFirstName(firstName, evt) || !validateLastName(lastName, evt) || !validateEmail(emailSign, evt) || !validatePassword(password, evt) || !validateComfirmPassword(comfirmPassword, evt)) {
 		return;
 	}
+
+	const verificationCode = generateVerificationCode();
 
 	createUserWithEmailAndPassword(auth, emailSign.value, password.value)
 		.then((credentials) => {
@@ -171,6 +176,7 @@ let RegisterUser = (evt) => {
 
 			const emailParams = {
 				email_id: emailSign.value,
+				verification_code: verificationCode,
 			};
 
 			emailjs.send(serviceID, templateID, emailParams)
@@ -183,6 +189,7 @@ let RegisterUser = (evt) => {
 					localStorage.setItem('savedVerification', emailSign.value);
 					let fullName = (firstName.value + lastName.value);
 					localStorage.setItem('savedName', fullName);
+					localStorage.setItem('savedOtp', verificationCode);
 					localStorage.setItem('email', emailSign.value);
 					loader.style.display = "block";
 					setTimeout(() => {

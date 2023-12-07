@@ -1,6 +1,7 @@
 const inputs = document.querySelectorAll('.otp-input');
 const signInButton = document.getElementById('signInButton');
 const loader = document.querySelector(".load");
+const savedVerificationCode = localStorage.getItem('savedOtp');
 
 inputs.forEach((input, index) => {
     let typingTimer;
@@ -37,14 +38,32 @@ inputs.forEach((input, index) => {
     });
 });
 
+function displayModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'block';
+}
+
 function checkInputs() {
     const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
     signInButton.disabled = !allFilled;
     loader.style.display = 'block';
 
-    setTimeout(() => {
-        window.location.href = '../project_pages/bookappointment1.html';
-    }, 2000);
+    if (allFilled) {
+        const enteredVerificationCode = Array.from(inputs).map(input => input.value).join('');
+        if (enteredVerificationCode === savedVerificationCode) {
+            setTimeout(() => {
+                window.location.href = '../project_pages/bookappointment1.html';
+            }, 2000);
+        } else {
+            loader.style.display = 'none';
+            displayModal();
+
+            setTimeout(() => {
+                const modal = document.getElementById('myModal');
+                modal.style.display = 'none';
+            }, 3000);
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
