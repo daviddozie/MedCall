@@ -121,6 +121,10 @@ showPassword.addEventListener("click", () => {
 	}
 })
 
+let modal = document.getElementById('myModal');
+let succName = document.getElementById('succ');
+let loader = document.querySelector(".load");
+
 let SignInUser = (evt) => {
 	evt.preventDefault();
 
@@ -140,7 +144,6 @@ let SignInUser = (evt) => {
 						})
 					);
 					sessionStorage.setItem("user-creds", JSON.stringify(credentials.user));
-					let loader = document.querySelector(".load");
 					loader.style.display = 'block';
 					setTimeout(() => {
 						window.location.href = "./bookappointment1.html";
@@ -149,9 +152,12 @@ let SignInUser = (evt) => {
 			});
 		})
 		.catch((error) => {
-			alert(error.message);
+			succName.innerHTML = email.value;
+			loader.style.display = 'block';
 			if(error.message) {
-				window.location.href = './sign_up.html';
+				setTimeout(() => {
+					modal.style.display = 'block';
+				}, 2500);
 			}
 			console.log(error.code);
 			console.log(error.message);

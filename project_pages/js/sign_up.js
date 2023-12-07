@@ -147,6 +147,10 @@ for (let i = 1; i < 3; i++) {
 	})
 }
 
+let modal = document.getElementById('myModal');
+let succName = document.getElementById('succ');
+let loader = document.querySelector('.load');
+
 let RegisterUser = (evt) => {
 	evt.preventDefault();
 
@@ -155,60 +159,64 @@ let RegisterUser = (evt) => {
 	}
 
 	createUserWithEmailAndPassword(auth, emailSign.value, password.value)
-        .then((credentials) => {
-            set(ref(db, "UsersAuthList/" + credentials.user.uid), {
-                firstName: firstName.value,
-                lastName: lastName.value,
-            });
+		.then((credentials) => {
+			set(ref(db, "UsersAuthList/" + credentials.user.uid), {
+				firstName: firstName.value,
+				lastName: lastName.value,
+			});
 
-            // Sending auto-reply email using EmailJS
-            const serviceID = 'service_kyyw8we';
-            const templateID = 'template_bv5eteh';
+			// Sending auto-reply email using EmailJS
+			const serviceID = 'service_kyyw8we';
+			const templateID = 'template_bv5eteh';
 
-            const emailParams = {
-                email_id: emailSign.value,
-            };
+			const emailParams = {
+				email_id: emailSign.value,
+			};
 
-            emailjs.send(serviceID, templateID, emailParams)
-                .then(() => {
-                    alert('Registration successful! Please check your email for verification.');
+			emailjs.send(serviceID, templateID, emailParams)
+				.then(() => {
+					succName.innerHTML = firstName.value + ' ' + lastName.value;
+					loader.style.display = "block";
+					setTimeout(() => {
+						modal.style.display = 'block';
+					}, 2500);
 					localStorage.setItem('savedVerification', emailSign.value);
 					let fullName = (firstName.value + lastName.value);
 					localStorage.setItem('savedName', fullName);
-					let loader = document.querySelector('.load');
 					localStorage.setItem('email', emailSign.value);
 					loader.style.display = "block";
 					setTimeout(() => {
 						window.location.href = "../auth/verification.html";
-					}, 2500);
-                })
-                .catch((err) => {
-                    alert('Error sending email: ' + err);
-                });
-        })
-        .catch((error) => {
-            alert('Registration error: ' + error.message);
-            console.error(error.code);
-            console.error(error.message);
-        });
+					}, 7500);
+				})
+				.catch((err) => {
+					alert('Error sending email: ' + err);
+				});
+		})
+		.catch((error) => {
+			window.location.href = '../auth/Error_screen.html';
+			console.error(error.code);
+			console.error(error.message);
+		});
 };
 
 function sendAutoReply(receiverEmail, receiverName) {
-    const autoReplyServiceID = 'service_kyyw8we';
-    const autoReplyTemplateID = 'template_bv5eteh';
+	const autoReplyServiceID = 'service_kyyw8we';
+	const autoReplyTemplateID = 'template_bv5eteh';
 
-    const autoReplyParams = {
-        to_email: receiverEmail,
-        to_name: receiverName,
-    };
+	const autoReplyParams = {
+		to_email: receiverEmail,
+		to_name: receiverName,
+	};
 
-    emailjs.send(autoReplyServiceID, autoReplyTemplateID, autoReplyParams)
-        .then(() => {
-            console.log('sent successfully!');
-        })
-        .catch((err) => {
-            console.error('Error sending auto-reply:', err);
-        });
+	emailjs.send(autoReplyServiceID, autoReplyTemplateID, autoReplyParams)
+		.then(() => {
+			console.log('sent successfully!');
+		})
+		.catch((err) => {
+			console.error('Error sending auto-reply:', err);
+		});
 }
+
 
 submitForm.addEventListener("submit", RegisterUser);
