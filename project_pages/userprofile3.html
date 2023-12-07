@@ -43,11 +43,16 @@
                             <img src="./images/MedCall logo new 1.png" alt="">
                         </a>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center gap-4">
                         <a href="./userprofile.html">
                             <img src="./images/profile.book.png.png" alt="userProfile" class="profile-pix"
-                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Profile">
+                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Profile"
+                                id="profilePic">
                         </a>
+                        <div>
+                            <label for="input-file" class="upload-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="upload profile picture"><i class="fa-solid fa-upload"></i></label>
+                            <input type="file" accept="image/jpeg, image/jpg, image/png" id="input-file" class="d-none">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,7 +155,8 @@
                             <button type="reset" class="btn-outline-success" id="cancel-btn">Cancel</button>
                         </div>
                         <div>
-                            <button type="submit" class="btn-success d-flex justify-content-center align-items-center" id="save-btn">Save <div class="load ms-3"></div></button>
+                            <button type="submit" class="btn-success d-flex justify-content-center align-items-center"
+                                id="save-btn">Save <div class="load ms-3"></div></button>
                         </div>
                     </div>
                 </div>

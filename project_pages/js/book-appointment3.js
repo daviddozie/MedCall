@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedTime = localStorage.getItem('time');
     const displayTime = document.getElementById('displayTime');
 
+    const savedPic = localStorage.getItem('savedImage');
+    const disPlayProfilePix = document.getElementById('profilePix');
+
+    disPlayProfilePix.src = savedPic;
+
     const checked = true;
 
     if (checked) {

@@ -21,8 +21,8 @@ header {
 }
 
 .profile-book {
-    width: 53px;
-    height: 53px;
+    width: 53px !important;
+    height: 53px !important;
     border-radius: 10px;
     cursor: pointer;
 }

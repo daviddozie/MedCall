@@ -2,6 +2,11 @@ function calendar() {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+    const savedPic = localStorage.getItem('savedImage');
+    const disPlayProfilePix = document.getElementById('profilePix');
+
+    disPlayProfilePix.src = savedPic;
+
     const currentDate = new Date();
 
     const daysElement = document.querySelector('.days');

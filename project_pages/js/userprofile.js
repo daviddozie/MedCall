@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const userGeno = localStorage.getItem('genotype');
     const userBlood = localStorage.getItem('blood');
     const userGender = localStorage.getItem('gender');
+    const savedPic = localStorage.getItem('savedImage');
 
     const displayEmail = document.getElementById('profile-mail');
     const displayName = document.getElementById('profile-name');
@@ -28,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const displayGender = document.getElementById('profile-gender');
 
     const profileIDElement = document.getElementById('profile-id');
+    const profilePic = document.getElementById('profilePic');
+    const profilePix = document.getElementById('profilePix');
 
     const check = true;
 
@@ -44,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
         displayGeno.innerText = `Genotype: ${userGeno}`;
         displayBlood.innerText = `Blood Group: ${userBlood}`;
         displayGender.innerText = `Gender: ${userGender}`;
+        profilePic.src = savedPic;
+        profilePix.src = savedPic;
+        document.getElementById('name').textContent = savedName;
     }
 
     function generateRandomID(email) {

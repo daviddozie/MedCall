@@ -16,6 +16,12 @@ body {
     cursor: pointer;
 }
 
+.upload-icon {
+    font-size: 30px !important;
+    color: #135063;
+    cursor: pointer;
+}
+
 .load {
     border: 5px solid #fff;
     border-top: 5px solid #135063;
