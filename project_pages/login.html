@@ -34,12 +34,14 @@
 
 <body>
     <div id="myModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content shake">
             <div class="w-100 d-flex justify-content-center">
                 <div class="mark-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                        <path d="M50 75C51.4167 75 52.605 74.52 53.565 73.56C54.525 72.6 55.0033 71.4133 55 70C55 68.5833 54.52 67.3967 53.56 66.44C52.6 65.4833 51.4133 65.0033 50 65C48.5833 65 47.3967 65.48 46.44 66.44C45.4833 67.4 45.0033 68.5867 45 70C45 71.4167 45.48 72.605 46.44 73.565C47.4 74.525 48.5867 75.0033 50 75ZM45 55H55V25H45V55ZM50 100C43.0833 100 36.5833 98.6867 30.5 96.06C24.4167 93.4333 19.125 89.8717 14.625 85.375C10.125 80.875 6.56333 75.5833 3.94 69.5C1.31667 63.4167 0.00333333 56.9167 0 50C0 43.0833 1.31333 36.5833 3.94 30.5C6.56667 24.4167 10.1283 19.125 14.625 14.625C19.125 10.125 24.4167 6.56333 30.5 3.94C36.5833 1.31667 43.0833 0.00333333 50 0C56.9167 0 63.4167 1.31333 69.5 3.94C75.5833 6.56667 80.875 10.1283 85.375 14.625C89.875 19.125 93.4383 24.4167 96.065 30.5C98.6917 36.5833 100.003 43.0833 100 50C100 56.9167 98.6867 63.4167 96.06 69.5C93.4333 75.5833 89.8717 80.875 85.375 85.375C80.875 89.875 75.5833 93.4383 69.5 96.065C63.4167 98.6917 56.9167 100.003 50 100Z" fill="#EC1313"/>
-                      </svg>
+                        <path
+                            d="M50 75C51.4167 75 52.605 74.52 53.565 73.56C54.525 72.6 55.0033 71.4133 55 70C55 68.5833 54.52 67.3967 53.56 66.44C52.6 65.4833 51.4133 65.0033 50 65C48.5833 65 47.3967 65.48 46.44 66.44C45.4833 67.4 45.0033 68.5867 45 70C45 71.4167 45.48 72.605 46.44 73.565C47.4 74.525 48.5867 75.0033 50 75ZM45 55H55V25H45V55ZM50 100C43.0833 100 36.5833 98.6867 30.5 96.06C24.4167 93.4333 19.125 89.8717 14.625 85.375C10.125 80.875 6.56333 75.5833 3.94 69.5C1.31667 63.4167 0.00333333 56.9167 0 50C0 43.0833 1.31333 36.5833 3.94 30.5C6.56667 24.4167 10.1283 19.125 14.625 14.625C19.125 10.125 24.4167 6.56333 30.5 3.94C36.5833 1.31667 43.0833 0.00333333 50 0C56.9167 0 63.4167 1.31333 69.5 3.94C75.5833 6.56667 80.875 10.1283 85.375 14.625C89.875 19.125 93.4383 24.4167 96.065 30.5C98.6917 36.5833 100.003 43.0833 100 50C100 56.9167 98.6867 63.4167 96.06 69.5C93.4333 75.5833 89.8717 80.875 85.375 85.375C80.875 89.875 75.5833 93.4383 69.5 96.065C63.4167 98.6917 56.9167 100.003 50 100Z"
+                            fill="#EC1313" />
+                    </svg>
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
@@ -53,7 +55,7 @@
         </div>
     </div>
     <section id="login" class="over">
-         <div class="overflow-hidden">
+        <div class="overflow-hidden">
             <div class="row mobile">
                 <div class=" col-lg-7 col-md-6 col-12 ">
                     <div class="form-wrapper">
@@ -88,16 +90,26 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-12 col-12">
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="checkbox">
-                                    <p class="error-message font1"></p>
-                                    <label class="form-check-label login-statement font " for="exampleCheck1"> Keep me
-                                        logged
-                                        in</label>
-                                    <a href="../auth/forgot_Password.html "> <span id="pass"> forgot password</span>
-                                    </a>
+                            <div class="">
+                                <div class="d-flex justify-content-between col-lg-8">
+                                    <div class="d-flex align-items-center gap-1 mb-3">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input" id="checkbox">
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label login-statement font mb-0" for="exampleCheck1">
+                                                Keep me logged in
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            Forgot Password
+                                        </a>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-8">
                                 <button type="submit" class="btn btn-sign-in mt-4">Sign in <div class="load ms-3"></div>
                                 </button>
                             </div>

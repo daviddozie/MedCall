@@ -20,7 +20,6 @@ const dbref = ref(db);
 let email = document.getElementById("email");
 let password = document.getElementById("password1");
 let submitForm = document.getElementById("form");
-let checkbox = document.getElementById("checkbox")
 
 document.addEventListener("DOMContentLoaded", function () {
 	const circles = document.querySelectorAll('.item-circle1, .item-circle2, .item-circle3, .item-circle4, .item-circle5, .item-circle6, .item-circle7, .item-circle8');
@@ -81,21 +80,6 @@ function passwordName(passwordNew, event) {
 	}
 }
 
-function validateCheckbox(checkbox1, event){
-
-    if(!checkbox1.checked){
-        checkbox1.nextElementSibling.innerHTML = "please check to save details !";
-        checkbox.style.borderColor = "red";
-        event.preventDefault();
-        return false
-    } else {
-        checkbox1.nextElementSibling.innerHTML = " ";
-        checkbox.style.border = "2px solid green";
-        // event.preventDefault();
-        return true;
-    }
-}
-
 let hidePassword = document.querySelector(".fa-eye");
 let showPassword = document.querySelector(".fa-eye-slash");
 
@@ -128,7 +112,7 @@ let loader = document.querySelector(".load");
 let SignInUser = (evt) => {
 	evt.preventDefault();
 
-	if (!validateEmail(email, evt) || !passwordName(password, evt) || !validateCheckbox(checkbox, evt)) {
+	if (!validateEmail(email, evt) || !passwordName(password, evt)) {
 		return;
 	}
 

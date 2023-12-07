@@ -1,20 +1,22 @@
-let profilePic = document.getElementById('profilePic');
-let inputFile = document.getElementById('input-file');
+document.addEventListener('DOMContentLoaded', function () {
+    let profilePic = document.getElementById('profilePic');
+    let inputFile = document.getElementById('input-file');
+    const defaultImageURL = '../project_pages/images/user_icon_img.png';
 
-inputFile.onchange = function() {
-    const imageUrl = URL.createObjectURL(inputFile.files[0]);
-    profilePic.src = imageUrl;
-    localStorage.setItem('savedImage', imageUrl);
-}
+    inputFile.onchange = function () {
+        const imageUrl = URL.createObjectURL(inputFile.files[0]);
+        profilePic.src = imageUrl;
+        localStorage.setItem('savedImage', imageUrl);
+    }
 
-// Retrieve the image URL from local storage on page load
-window.onload = function() {
     const savedImage = localStorage.getItem('savedImage');
     if (savedImage) {
         profilePic.src = savedImage;
-    }
-}
+    } else {
 
+        profilePic.src = defaultImageURL;
+    }
+});
 
 let userForm = document.getElementById('editForm');
 let firstName = document.getElementById('nameFirst');
