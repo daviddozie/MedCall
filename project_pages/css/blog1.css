@@ -78,6 +78,10 @@ main {
   margin: 1rem 0px;
 }
 
+.blog {
+  width: 100%;
+}
+
 .direct-nav a:first-child {
   color: #A0A0A0;
   font-family: Poppins;
