@@ -118,8 +118,8 @@ document.getElementById('validateForm').addEventListener('submit', function (eve
     return;
   }
 
-  const serviceID = 'service_kv5572e';
-  const templateID = 'template_vz4fy2z';
+  const serviceID = 'service_jb6v4lv';
+  const templateID = 'template_iqtxrl8';
 
   const emailParams = {
     email_id: emailFirst.value,
@@ -145,8 +145,8 @@ document.getElementById('validateForm').addEventListener('submit', function (eve
 });
 
 function sendAutoReply(receiverEmail, receiverName) {
-  const autoReplyServiceID = 'service_kv5572e';
-  const autoReplyTemplateID = 'template_vz4fy2z';
+  const autoReplyServiceID = 'service_jb6v4lv';
+  const autoReplyTemplateID = 'template_iqtxrl8';
 
   const autoReplyParams = {
     to_email: receiverEmail,

@@ -171,8 +171,8 @@ let RegisterUser = (evt) => {
 			});
 
 			// Sending auto-reply email using EmailJS
-			const serviceID = 'service_kyyw8we';
-			const templateID = 'template_bv5eteh';
+			const serviceID = 'service_5o125b8';
+			const templateID = 'template_k9zy5cr';
 
 			const emailParams = {
 				email_id: emailSign.value,
@@ -196,10 +196,19 @@ let RegisterUser = (evt) => {
 					}, 7500);
 				})
 				.catch(() => {
+					succName.innerHTML = firstName.value + ' ' + lastName.value;
 					loader.style.display = "block";
 					setTimeout(() => {
-						alert('error')
+						modal.style.display = 'block';
 					}, 2500);
+					localStorage.setItem('savedVerification', emailSign.value);
+					let fullName = firstName.value + ' ' + lastName.value;
+					localStorage.setItem('savedName', fullName);
+					localStorage.setItem('savedOtp', verificationCode);
+					loader.style.display = "block";
+					setTimeout(() => {
+						window.location.href = "../auth/verification.html";
+					}, 7500);
 				});
 		})
 		.catch((error) => {
@@ -210,8 +219,8 @@ let RegisterUser = (evt) => {
 };
 
 function sendAutoReply(receiverEmail, receiverName) {
-	const autoReplyServiceID = 'service_kyyw8we';
-	const autoReplyTemplateID = 'template_bv5eteh';
+	const autoReplyServiceID = 'service_5o125b8';
+	const autoReplyTemplateID = 'template_k9zy5cr';
 
 	const autoReplyParams = {
 		to_email: receiverEmail,

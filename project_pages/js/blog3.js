@@ -42,8 +42,8 @@ document.getElementById('validateNews3').addEventListener('submit', function (ev
         return;
     }
 
-    const serviceID = 'service_kyyw8we';
-    const templateID = 'template_vz4fy2z';
+    const serviceID = 'service_jb6v4lv';
+    const templateID = 'template_iqtxrl8';
 
     const emailParams = {
         email_id: emailNews.value,
@@ -64,8 +64,8 @@ document.getElementById('validateNews3').addEventListener('submit', function (ev
 });
 
 function sendAutoReply(receiverEmail, receiverName) {
-    const autoReplyServiceID = 'service_kyyw8we';
-    const autoReplyTemplateID = 'template_vz4fy2z';
+    const autoReplyServiceID = 'service_jb6v4lv';
+    const autoReplyTemplateID = 'template_iqtxrl8';
 
     const autoReplyParams = {
         to_email: receiverEmail,

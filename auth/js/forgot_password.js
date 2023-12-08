@@ -39,7 +39,7 @@ function displayModal() {
 }
 
 const generateVerificationCode = () => {
-	return Math.floor(100000 + Math.random() * 900000);
+    return Math.floor(100000 + Math.random() * 900000);
 };
 
 document.getElementById('validate-pw1').addEventListener('submit', function (event) {
@@ -53,8 +53,8 @@ document.getElementById('validate-pw1').addEventListener('submit', function (eve
 
     const verificationCode = generateVerificationCode();
 
-    const serviceID = 'service_kyyw8we';
-    const templateID = 'template_bv5eteh';
+    const serviceID = 'service_5o125b8';
+    const templateID = 'template_k9zy5cr';
 
     const emailParams = {
         email_id: emailForgot.value,
@@ -78,8 +78,8 @@ document.getElementById('validate-pw1').addEventListener('submit', function (eve
 });
 
 function sendAutoReply(receiverEmail, receiverName) {
-    const autoReplyServiceID = 'service_kyyw8we';
-    const autoReplyTemplateID = 'template_bv5eteh';
+    const autoReplyServiceID = 'service_5o125b8';
+    const autoReplyTemplateID = 'template_k9zy5cr';
 
     const autoReplyParams = {
         to_email: receiverEmail,
