@@ -458,6 +458,14 @@ a:link {
         display: none;
     }
 
+    .modal-content {
+        background-color: #fefefe;
+        margin: 25% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 95%;
+    }
+
     main {
         min-height: 100vh;
     }
@@ -534,7 +542,7 @@ a:link {
     /* Modal content */
     .modal-content {
         background-color: #fefefe;
-        margin: 20% auto;
+        margin: 25% auto;
         padding: 20px;
         border: 1px solid #888;
         width: 95%;

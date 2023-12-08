@@ -192,10 +192,10 @@ a:link {
 /* Modal content */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 8% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
 }
 
 /* Close button */
@@ -396,6 +396,14 @@ footer {
     .card {
         border-radius: 20px;
         border: none;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 25% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 95%;
     }
 }
 

@@ -400,6 +400,14 @@ button:disabled {
         overflow-x: hidden;
     }
 
+    .modal-content {
+        background-color: #fefefe;
+        margin: 25% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 95%;
+    }
+
     .first-section {
         margin-top: 1150px;
     }
@@ -1245,6 +1253,14 @@ button:disabled {
         animation: rotate 1s linear infinite;
         position: absolute;
         top: 18%;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 25% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 95%;
     }
 
     .eclips-1 {
