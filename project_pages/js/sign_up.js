@@ -187,17 +187,19 @@ let RegisterUser = (evt) => {
 						modal.style.display = 'block';
 					}, 2500);
 					localStorage.setItem('savedVerification', emailSign.value);
-					let fullName = (firstName.value + ' ' + lastName.value);
+					let fullName = firstName.value + ' ' + lastName.value;
 					localStorage.setItem('savedName', fullName);
 					localStorage.setItem('savedOtp', verificationCode);
-					localStorage.setItem('email', emailSign.value);
 					loader.style.display = "block";
 					setTimeout(() => {
 						window.location.href = "../auth/verification.html";
 					}, 7500);
 				})
-				.catch((err) => {
-					alert('Error sending email: ' + err);
+				.catch(() => {
+					loader.style.display = "block";
+					setTimeout(() => {
+						alert('error')
+					}, 2500);
 				});
 		})
 		.catch((error) => {

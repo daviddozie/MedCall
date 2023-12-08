@@ -78,8 +78,8 @@ main {
   margin: 1rem 0px;
 }
 
-.blog {
-  width: 100%;
+.blog-img {
+  border-radius: 20px 20px 0px 0px !important;
 }
 
 .direct-nav a:first-child {
