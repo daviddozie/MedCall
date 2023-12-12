@@ -189,6 +189,8 @@ let RegisterUser = (evt) => {
 					localStorage.setItem('savedVerification', emailSign.value);
 					let fullName = firstName.value + ' ' + lastName.value;
 					localStorage.setItem('savedName', fullName);
+					localStorage.setItem('savedFirstName', firstName.value);
+					localStorage.setItem('savedLastName', lastName.value);
 					localStorage.setItem('savedOtp', verificationCode);
 					loader.style.display = "block";
 					setTimeout(() => {

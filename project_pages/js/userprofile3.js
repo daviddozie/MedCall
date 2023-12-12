@@ -32,6 +32,15 @@ let userGenotype = document.getElementById('userGenotype');
 let userCity = document.getElementById('userCity');
 let userBloodG = document.getElementById('userBloodG');
 
+document.addEventListener('DOMContentLoaded', function () {
+    const firstNameVal = localStorage.getItem('savedFirstName');
+    const lastNameVal = localStorage.getItem('savedLastName');
+    const emailVal = localStorage.getItem('savedVerification');
+    let fNameVal = firstName.value = firstNameVal;
+    let LNameVal = lastName.value = lastNameVal;
+    userEmail.value = emailVal;
+});
+
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -253,7 +262,7 @@ function houseFunc(e) {
     ) {
         let loader = document.querySelector('.load');
         loader.style.display = 'block';
-        let fullName = (firstName.value + lastName.value);
+        let fullName = firstName.value + ' ' + lastName.value;
         localStorage.setItem('SavedName', fullName);
         localStorage.setItem('phoneNum', userNum.value);
         localStorage.setItem('homeAddress', userHome.value);

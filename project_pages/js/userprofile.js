@@ -4,6 +4,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 document.addEventListener('DOMContentLoaded', function () {
     const savedEmail = localStorage.getItem('savedVerification');
     const savedName = localStorage.getItem('savedName');
+    const editSaveName = localStorage.getItem('editSaveName');
     const userNumber = localStorage.getItem('phoneNum');
     const userHome = localStorage.getItem('homeAddress');
     const userStatus = localStorage.getItem('marital');
@@ -36,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (check) {
         displayEmail.innerText = `Email Address: ${savedEmail}`;
-        displayName.innerText = `Name: ${savedName}`;
-        displayNickName.innerText = `Display Name: ${savedName}`;
+        displayName.innerText = `Name: ${editSaveName}`;
+        displayNickName.innerText = `Display Name: ${editSaveName}`;
         displayUserNum.innerText = `Phone Number: ${userNumber}`;
         displayHome.innerHTML = `Address: ${userHome}`;
         displayStatus.innerText = `Marital Status: ${userStatus}`;
